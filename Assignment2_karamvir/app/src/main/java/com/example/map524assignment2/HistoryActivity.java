@@ -27,7 +27,7 @@ public class HistoryActivity extends AppCompatActivity {
         historyRec = findViewById(R.id.historyList);
         historyManager = ((MyApp)getApplication()).historyManager;
         adapter = new HistoryAdapter(historyManager.operationHistory,this, listener);
-        //Log.d("HISTORY PAGE", historyManager.operationHistory.get(0).name);
+        
         historyRec.setAdapter(adapter);
         historyRec.setLayoutManager(new LinearLayoutManager(this));
         ActionBar actionBar = getSupportActionBar();
